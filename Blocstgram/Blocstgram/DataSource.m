@@ -114,9 +114,10 @@
     return [NSString stringWithString:s];
 }
 
+
 -(void) removeMediaItemsAtIndex:(NSInteger)index {
-    
     [self.mediaItems removeObjectAtIndex:index];
+
 }
 
 

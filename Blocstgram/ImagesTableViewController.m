@@ -25,6 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSArray *) items {
+    NSArray *items = [DataSource sharedInstance].mediaItems;
+    return items;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
