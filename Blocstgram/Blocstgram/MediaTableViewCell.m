@@ -58,14 +58,10 @@ static NSParagraphStyle *paragraphStyle;
         self.imageWidthConstraint = [NSLayoutConstraint constraintWithItem:_mediaImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:100];
         self.imageWidthConstraint.identifier = @"Image width constraint";
 
-        
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_usernameAndCaptionLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_commentLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_mediaImageView][_usernameAndCaptionLabel][_commentLabel]" options:kNilOptions metrics:nil views:viewDictionary]];
-        
-
-        
         
         self.usernameAndCaptionLabelHeightConstraint = [NSLayoutConstraint constraintWithItem:_usernameAndCaptionLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:100];
         self.usernameAndCaptionLabelHeightConstraint.identifier = @"Username and caption label height constraint";
@@ -115,20 +111,34 @@ static NSParagraphStyle *paragraphStyle;
 -(NSAttributedString *) commentString {
     NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] init];
     
-    for (Comment *comment in self.mediaItem.comments) {
+    for (int i = 0; i < self.mediaItem.comments.count; i++) {
+        
+        Comment *comment = self.mediaItem.comments[i];
+        
         NSString *baseString = [NSString stringWithFormat:@"%@ %@\n", comment.from.userName, comment.text];
         
         NSMutableAttributedString *oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle}];
         NSRange usernameRange = [baseString rangeOfString:comment.from.userName];
         NSRange commentRange = [baseString rangeOfString: comment.text];
+        NSRange commentAreaRange = [baseString rangeOfString:baseString];
         
-        [oneCommentString addAttribute:NSForegroundColorAttributeName value:firstCommentColor range:commentRange];
+            if (i == 0) {
+                [oneCommentString addAttribute:NSForegroundColorAttributeName value:firstCommentColor range:commentRange];
+            }
+            else if (i % 2)  {
+                NSMutableParagraphStyle *mutableParagraphStyleRight = [[NSMutableParagraphStyle alloc] init];
+                mutableParagraphStyleRight.alignment = NSTextAlignmentRight;
+                [oneCommentString addAttribute:NSParagraphStyleAttributeName value:mutableParagraphStyleRight range:commentAreaRange];
+                [oneCommentString addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:commentRange];
+            }
+        
         [oneCommentString addAttribute:NSFontAttributeName value:boldFont range:usernameRange];
         [oneCommentString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
         
         [commentString appendAttributedString:oneCommentString];
         
     }
+    
     return commentString;
 }
 
