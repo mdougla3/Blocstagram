@@ -127,6 +127,11 @@
     [mutableArrayWithKVO removeObject:item];
 }
 
+-(void) moveMediaItemToTop:(Media *)item indexPath:(NSIndexPath *)index {
+    NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
+    [mutableArrayWithKVO exchangeObjectAtIndex: index.row withObjectAtIndex:0];
+}
+
 # pragma mark - Key Value Observing
 
 -(NSUInteger) countOfMediaItems {

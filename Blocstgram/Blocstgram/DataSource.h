@@ -20,5 +20,6 @@
 -(void) deleteMediaItem:(Media *)item;
 
 -(void) removeMediaItemsAtIndex:(NSInteger)index;
+-(void) moveMediaItemToTop:(Media *)item indexPath:(NSIndexPath *)index;
 
 @end

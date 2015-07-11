@@ -79,12 +79,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-
-        //Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
-        //[[DataSource sharedInstance] deleteMediaItem:item];
-        [[DataSource sharedInstance].mediaItems exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
-        [self.tableView reloadData];
-    
+        Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+        [[DataSource sharedInstance] moveMediaItemToTop:item indexPath:indexPath];
     }
 }
 
