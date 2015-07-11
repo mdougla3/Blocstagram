@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class Media;
 
 @interface DataSource : NSObject
 
 +(instancetype) sharedInstance;
+
 @property (nonatomic, strong, readonly) NSMutableArray *mediaItems;
+
+-(void) deleteMediaItem:(Media *)item;
 
 -(void) removeMediaItemsAtIndex:(NSInteger)index;
 
