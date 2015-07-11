@@ -80,8 +80,11 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
-        Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
-        [[DataSource sharedInstance] deleteMediaItem:item];
+        //Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+        //[[DataSource sharedInstance] deleteMediaItem:item];
+        [[DataSource sharedInstance].mediaItems exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
+        [self.tableView reloadData];
+    
     }
 }
 
