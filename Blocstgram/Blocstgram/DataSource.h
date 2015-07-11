@@ -15,9 +15,11 @@ typedef void (^NewItemCompletionBlock)(NSError *error);
 
 @interface DataSource : NSObject
 
++ (NSString *) instagramClientID;
 +(instancetype) sharedInstance;
 
 @property (nonatomic, strong, readonly) NSMutableArray *mediaItems;
+@property (nonatomic, strong, readonly) NSString *accessToken;
 
 -(void) deleteMediaItem:(Media *)item;
 
@@ -25,5 +27,6 @@ typedef void (^NewItemCompletionBlock)(NSError *error);
 -(void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 
 -(void) removeMediaItemsAtIndex:(NSInteger)index;
+-(void) moveMediaItemToTop:(Media *)item indexPath:(NSIndexPath *)index; 
 
 @end

@@ -12,6 +12,7 @@
 		C57CB52F1B44DCF40068ECEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57CB52E1B44DCF40068ECEA /* Images.xcassets */; };
 		C57CB5321B44DCF40068ECEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57CB5301B44DCF40068ECEA /* LaunchScreen.xib */; };
 		C57CB53E1B44DCF40068ECEA /* BlocstgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57CB53D1B44DCF40068ECEA /* BlocstgramTests.m */; };
+		C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CD87251B51A9C100470417 /* LoginViewController.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -51,6 +52,8 @@
 		C57CB5371B44DCF40068ECEA /* BlocstgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB53C1B44DCF40068ECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57CB53D1B44DCF40068ECEA /* BlocstgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstgramTests.m; sourceTree = "<group>"; };
+		C5CD87241B51A9C100470417 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C5CD87251B51A9C100470417 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				C57CB5261B44DCF40068ECEA /* AppDelegate.m */,
 				C5EAE6881B4B20F30023ECF9 /* ImagesTableViewController.h */,
 				C5EAE6891B4B20F30023ECF9 /* ImagesTableViewController.m */,
+				C5CD87241B51A9C100470417 /* LoginViewController.h */,
+				C5CD87251B51A9C100470417 /* LoginViewController.m */,
 				C5EAE6971B4B7BB90023ECF9 /* MediaTableViewCell.h */,
 				C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */,
 				C5EAE68B1B4B2A480023ECF9 /* User.h */,
@@ -293,6 +298,7 @@
 				C5EAE6991B4B7BB90023ECF9 /* MediaTableViewCell.m in Sources */,
 				C5EAE6901B4B2B7B0023ECF9 /* Media.m in Sources */,
 				C57CB5271B44DCF40068ECEA /* AppDelegate.m in Sources */,
+				C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */,
 				C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */,
 				C57CB5241B44DCF40068ECEA /* main.m in Sources */,
 				C5EAE68A1B4B20F30023ECF9 /* ImagesTableViewController.m in Sources */,
