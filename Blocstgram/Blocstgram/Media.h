@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIKit/UIKit.h"
 #import "User.h"
+#import "Comment.h"
 
 @class User;
 
@@ -21,5 +22,6 @@
 @property (strong, nonatomic) NSString *caption;
 @property (strong, nonatomic) NSArray *comments;
 
+-(instancetype) initWithDictionary:(NSDictionary *)mediaDictionary;
 
 @end
