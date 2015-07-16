@@ -53,9 +53,10 @@
     
     [self.scrollView addGestureRecognizer:self.tap];
     [self.scrollView addGestureRecognizer:self.doubleTap];
+    
 }
 
--(void) viewWillAppear:(BOOL)animated {
+- (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self centerScrollView];
 }
@@ -65,9 +66,8 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) viewWillLayoutSubviews {
+- (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    
     self.scrollView.frame = self.view.bounds;
     
     CGSize scrollViewFrameSize = self.scrollView.frame.size;
@@ -81,7 +81,7 @@
     self.scrollView.maximumZoomScale = 1;
 }
 
--(void) centerScrollView {
+- (void)centerScrollView {
     [self.imageView sizeToFit];
     
     CGSize boundsSize = self.scrollView.bounds.size;
@@ -89,35 +89,34 @@
     
     if (contentsFrame.size.width < boundsSize.width) {
         contentsFrame.origin.x = (boundsSize.width - CGRectGetWidth(contentsFrame)) / 2;
-    } else {contentsFrame.origin.x = 0;}
-    
+    } else {
+        contentsFrame.origin.x = 0;
+    }
     if (contentsFrame.size.height < boundsSize.height) {
         contentsFrame.origin.y = (boundsSize.height - CGRectGetHeight(contentsFrame)) / 2;
-    } else { contentsFrame.origin.y = 0;}
-    
+    } else {
+        contentsFrame.origin.y = 0;
+    }
     self.imageView.frame = contentsFrame;
-    
 }
 
-# pragma mark - UIScrollViewDelegate
-
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+#pragma mark - UIScrollViewDelegate
+- (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.imageView;
 }
 
--(void) scrollViewDidZoom:(UIScrollView *)scrollView {
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView {
     [self centerScrollView];
 }
 
 # pragma mark - Gesture Recognizers
 
 -(void) tapFired:(UITapGestureRecognizer *)sender {
-    [ self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void) doubleTapFired:(UITapGestureRecognizer *)sender {
+- (void) doubleTapFired:(UITapGestureRecognizer *)sender {
     if (self.scrollView.zoomScale == self.scrollView.minimumZoomScale) {
-        
         CGPoint locationPoint = [sender locationInView:self.imageView];
         
         CGSize scrollViewSize = self.scrollView.bounds.size;
@@ -128,7 +127,10 @@
         CGFloat y = locationPoint.y - (height / 2);
         
         [self.scrollView zoomToRect:CGRectMake(x, y, width, height) animated:YES];
-    } else { [self.scrollView setZoomScale:self.scrollView.minimumZoomScale animated:YES]; }
+    } else {
+        [self.scrollView setZoomScale:self.scrollView.minimumZoomScale animated:YES];
+    }
 }
+
 
 @end

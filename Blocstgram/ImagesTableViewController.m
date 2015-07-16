@@ -154,9 +154,9 @@
     [self infiniteScrollIfNecessary];
 }
 
-# pragma mark - MediaTableCellViewDelegate
+#pragma mark - MediaTableViewCellDelegate
 
--(void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
+- (void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
     MediaFullScreenViewController *fullScreenVC = [[MediaFullScreenViewController alloc] initWithMedia:cell.mediaItem];
     [self presentViewController:fullScreenVC animated:YES completion:nil];
 }

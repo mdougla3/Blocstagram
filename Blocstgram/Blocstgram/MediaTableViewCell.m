@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSLayoutConstraint *imageWidthConstraint;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
-@property (nonatomic, strong) UITapGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
 
 @end
 
@@ -45,7 +45,7 @@ static NSParagraphStyle *paragraphStyle;
         self.tapGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.tapGestureRecognizer];
         
-        self.longPressGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(longPressFired:)];
+        self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressFired:)];
         self.longPressGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.longPressGestureRecognizer];
         
