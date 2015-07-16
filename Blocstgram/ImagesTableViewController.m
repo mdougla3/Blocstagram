@@ -26,8 +26,11 @@
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
-    
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
+    
+    //if ([DataSource sharedInstance].mediaItems.count > 0) {
+    //    [self refreshControlDidFire:self.refreshControl];
+    //}
 }
 
 -(void) refreshControlDidFire:(UIRefreshControl *)sender {

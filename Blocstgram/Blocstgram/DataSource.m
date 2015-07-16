@@ -11,6 +11,7 @@
 #import "Media.h"
 #import "Comment.h"
 #import "LoginViewController.h"
+#import <UICKeyChainStore.h>
 
 @interface DataSource () {
     NSMutableArray *_mediaItems;
@@ -39,15 +40,22 @@
     self = [super init];
     
     if (self) {
-        [self registerForAccessToken];
+        self.accessToken = [UICKeyChainStore stringForKey:@"access token"];
+        if (!self.accessToken) {
+            [self registerForAccessTokenNotification];
+        } else {
+            [self populateDataWithParameters:nil completionHandler:nil];
+        }
+    
     }
     return self;
 }
 
--(void) registerForAccessToken {
+-(void) registerForAccessTokenNotification {
     
     [[NSNotificationCenter defaultCenter] addObserverForName:LoginViewControllerDidGetAccessTokenNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
         self.accessToken = note.object;
+        [UICKeyChainStore setString:self.accessToken forKey:@"access token"];
         
         [self populateDataWithParameters:nil completionHandler:nil];
     }];
@@ -147,13 +155,15 @@
                         dispatch_async(dispatch_get_main_queue(), ^{
                             completionHandler(jsonError);
                         });
-                    } else if (completionHandler) {
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            completionHandler(webError);
-                        });
                     }
                 }
+                else if (completionHandler) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        completionHandler(webError);
+                    });
+                }
             }
+            
         });
     }
 }
@@ -222,7 +232,12 @@
     }
 }
 
-
+- (NSString *) pathForFilename:(NSString *) filename {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:filename];
+    return dataPath;
+}
 
 # pragma mark - Key Value Observing
 

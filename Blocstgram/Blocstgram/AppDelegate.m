@@ -27,6 +27,9 @@
     [DataSource sharedInstance];
     
     UINavigationController *navVC = [[UINavigationController alloc] init];
+    
+    if (![DataSource sharedInstance].accessToken) {
+        
     LoginViewController *loginVC = [[LoginViewController alloc] init];
     [navVC setViewControllers:@[loginVC] animated:YES];
     
@@ -34,7 +37,10 @@
         ImagesTableViewController *imagesVC = [[ImagesTableViewController alloc] init];
         [navVC setViewControllers:@[imagesVC] animated:YES];
     }];
-    
+    } else {
+        ImagesTableViewController *imagesVC = [[ImagesTableViewController alloc] init];
+        [navVC setViewControllers:@[imagesVC] animated:YES];
+    }
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
     
