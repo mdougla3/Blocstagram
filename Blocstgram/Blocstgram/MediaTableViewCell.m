@@ -7,6 +7,7 @@
 //
 
 #import "MediaTableViewCell.h"
+#import "DataSource.h"
 
 @interface MediaTableViewCell () <UIGestureRecognizerDelegate>
 
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) Media *media;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *doubleTapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
 
 @end
@@ -46,6 +48,11 @@ static NSParagraphStyle *paragraphStyle;
         self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
         self.tapGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.tapGestureRecognizer];
+        
+        self.doubleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
+        self.doubleTapGestureRecognizer.delegate = self;
+        self.doubleTapGestureRecognizer.numberOfTouchesRequired = 2;
+        [self.mediaImageView addGestureRecognizer:self.doubleTapGestureRecognizer];
         
         self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressFired:)];
         self.longPressGestureRecognizer.delegate = self;
@@ -216,12 +223,11 @@ static NSParagraphStyle *paragraphStyle;
 # pragma mark - Image View
 
 -(void) tapFired:(UITapGestureRecognizer *) sender {
-    if (sender.numberOfTouches == 2) {
-        
-        
-    } else {
-        [self.delegate cell:self didTapImageView:self.mediaImageView];
-    }
+    [self.delegate cell:self didTapImageView:self.mediaImageView];
+}
+
+-(void) doubleTapFired:(UITapGestureRecognizer *) sender {
+    [[DataSource sharedInstance] downloadImageForMediaItem:self.mediaItem];
 }
 # pragma mark - UIGestureRecognizerDelegate
 
