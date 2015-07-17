@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSLayoutConstraint *commentLabelHeightConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *imageWidthConstraint;
 
+@property (nonatomic, strong) Media *media;
+
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
 
@@ -214,9 +216,13 @@ static NSParagraphStyle *paragraphStyle;
 # pragma mark - Image View
 
 -(void) tapFired:(UITapGestureRecognizer *) sender {
-    [self.delegate cell:self didTapImageView:self.mediaImageView];
+    if (sender.numberOfTouches == 2) {
+        
+        
+    } else {
+        [self.delegate cell:self didTapImageView:self.mediaImageView];
+    }
 }
-
 # pragma mark - UIGestureRecognizerDelegate
 
 -(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {

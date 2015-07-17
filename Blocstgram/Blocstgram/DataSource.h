@@ -27,6 +27,8 @@ typedef void (^NewItemCompletionBlock)(NSError *error);
 -(void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 
 -(void) removeMediaItemsAtIndex:(NSInteger)index;
--(void) moveMediaItemToTop:(Media *)item indexPath:(NSIndexPath *)index; 
+-(void) moveMediaItemToTop:(Media *)item indexPath:(NSIndexPath *)index;
+
+-(void) downloadImageForMediaItem:(Media *)mediaItem;
 
 @end

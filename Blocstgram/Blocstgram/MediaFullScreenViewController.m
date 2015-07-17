@@ -8,6 +8,9 @@
 
 #import "MediaFullScreenViewController.h"
 #import "Media.h"
+#import "ImagesTableViewController.h"
+#import "SharedUtilities.h"
+
 
 @interface MediaFullScreenViewController () <UIScrollViewDelegate>
 
@@ -62,13 +65,13 @@
     self.shareButton.backgroundColor = [UIColor whiteColor];
     shareButton.frame = CGRectMake(300, 10, 100, 100);
     
-    [self.scrollView addSubview:shareButton];
+    [self.view addSubview:shareButton];
     
 }
 
 -(void)shareButtonPressed:(UIButton *) button {
-    self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.media.image] applicationActivities:nil];
-    [self presentViewController:self.activityViewController animated:YES completion:nil];
+    UIActivityViewController *activityVC = [SharedUtilities sharedMediaItem:self.media];
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
