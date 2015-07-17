@@ -88,8 +88,17 @@
 }
 
 - (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //Media *mediaItem = [DataSource sharedInstance].mediaItems[indexPath.row];
+    //if (mediaItem.downloadState == MediaDownloadStateNeedsImage) {
+    //    [[DataSource sharedInstance] downloadImageForMediaItem:mediaItem];
+    //}
+}
+
+-(void) scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     Media *mediaItem = [DataSource sharedInstance].mediaItems[indexPath.row];
-    if (mediaItem.downloadState == MediaDownloadStateNeedsImage) {
+    
+    if (scrollView.decelerationRate < 1) {
         [[DataSource sharedInstance] downloadImageForMediaItem:mediaItem];
     }
 }
