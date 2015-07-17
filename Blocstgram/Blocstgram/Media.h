@@ -11,6 +11,13 @@
 #import "User.h"
 #import "Comment.h"
 
+typedef NS_ENUM(NSInteger, MediaDownloadState) {
+    MediaDownloadStateNeedsImage           = 0,
+    MediaDownloadStateDownloadInProgress   = 1,
+    MediaDownloadStateNonRecoverableError  = 2,
+    MediaDownloadStateHasImage             = 3
+};
+
 @class User;
 
 @interface Media : NSObject <NSCoding>
@@ -19,6 +26,8 @@
 @property (strong, nonatomic) User *user;
 @property (strong, nonatomic) NSURL *mediaURL;
 @property (strong, nonatomic) UIImage *image;
+@property (nonatomic, assign) MediaDownloadState downloadState;
+
 @property (strong, nonatomic) NSString *caption;
 @property (strong, nonatomic) NSArray *comments;
 
