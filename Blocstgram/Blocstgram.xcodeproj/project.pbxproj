@@ -16,6 +16,9 @@
 		C5AD08F11B5755930012F25B /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */; };
 		C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CD87251B51A9C100470417 /* LoginViewController.m */; };
 		C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */; };
+		C5D5A6E51B59FE20008EEDE4 /* Like Button Resources in Resources */ = {isa = PBXBuildFile; fileRef = C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */; };
+		C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */; };
+		C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -64,6 +67,11 @@
 		C5CD87251B51A9C100470417 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C5D5A6E11B589392008EEDE4 /* SharedUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedUtilities.h; sourceTree = "<group>"; };
 		C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedUtilities.m; sourceTree = "<group>"; };
+		C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Like Button Resources"; sourceTree = "<group>"; };
+		C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		C5D5A6FE1B5A8DFB008EEDE4 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -146,7 +154,11 @@
 				C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */,
 				C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */,
 				C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */,
+				C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */,
+				C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */,
 				C5EAE6881B4B20F30023ECF9 /* ImagesTableViewController.h */,
+				C5D5A6FE1B5A8DFB008EEDE4 /* LikeButton.h */,
+				C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */,
 				C5CD87241B51A9C100470417 /* LoginViewController.h */,
 				C5D5A6E11B589392008EEDE4 /* SharedUtilities.h */,
 				C5EAE6971B4B7BB90023ECF9 /* MediaTableViewCell.h */,
@@ -168,6 +180,7 @@
 		C57CB5211B44DCF40068ECEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */,
 				C5EAE6711B4B20810023ECF9 /* Images */,
 				C57CB5221B44DCF40068ECEA /* Info.plist */,
 				C57CB5231B44DCF40068ECEA /* main.m */,
@@ -310,6 +323,7 @@
 				C5EAE6821B4B20BD0023ECF9 /* 5.jpg in Resources */,
 				C5EAE6841B4B20BD0023ECF9 /* 7.jpg in Resources */,
 				C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */,
+				C5D5A6E51B59FE20008EEDE4 /* Like Button Resources in Resources */,
 				C5EAE6871B4B20BD0023ECF9 /* 10.jpg in Resources */,
 				C57CB52F1B44DCF40068ECEA /* Images.xcassets in Resources */,
 			);
@@ -372,6 +386,8 @@
 				C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */,
 				C57CB5241B44DCF40068ECEA /* main.m in Sources */,
 				C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */,
+				C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */,
+				C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */,
 				C5EAE68A1B4B20F30023ECF9 /* ImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
