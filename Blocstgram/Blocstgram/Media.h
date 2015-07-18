@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, MediaDownloadState) {
 @property (strong, nonatomic) NSURL *mediaURL;
 @property (strong, nonatomic) UIImage *image;
 @property (nonatomic, assign) MediaDownloadState downloadState;
+@property (nonatomic, assign) NSInteger likeCount;
 
 @property (strong, nonatomic) NSString *caption;
 @property (strong, nonatomic) NSArray *comments;
