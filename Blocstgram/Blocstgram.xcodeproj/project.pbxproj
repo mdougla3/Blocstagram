@@ -20,6 +20,9 @@
 		C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */; };
 		C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */; };
 		C5D5A7031B5AF39F008EEDE4 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */; };
+		C5D5A7061B5BF874008EEDE4 /* CameraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */; };
+		C5D5A7091B5C030B008EEDE4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */; };
+		C5D5A70C1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -75,6 +78,12 @@
 		C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		C5D5A7011B5AF39F008EEDE4 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
 		C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
+		C5D5A7041B5BF874008EEDE4 /* CameraToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToolbar.h; sourceTree = "<group>"; };
+		C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToolbar.m; sourceTree = "<group>"; };
+		C5D5A7071B5C030B008EEDE4 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C5D5A70A1B5C09E1008EEDE4 /* UIImage+ImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageUtilities.h"; sourceTree = "<group>"; };
+		C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageUtilities.m"; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -157,6 +166,12 @@
 				C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */,
 				C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */,
 				C5D5A7011B5AF39F008EEDE4 /* ComposeCommentView.h */,
+				C5D5A7041B5BF874008EEDE4 /* CameraToolbar.h */,
+				C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */,
+				C5D5A7071B5C030B008EEDE4 /* CameraViewController.h */,
+				C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */,
+				C5D5A70A1B5C09E1008EEDE4 /* UIImage+ImageUtilities.h */,
+				C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */,
 				C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */,
 				C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */,
 				C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */,
@@ -390,8 +405,11 @@
 				C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */,
 				C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */,
 				C57CB5241B44DCF40068ECEA /* main.m in Sources */,
+				C5D5A7091B5C030B008EEDE4 /* CameraViewController.m in Sources */,
+				C5D5A7061B5BF874008EEDE4 /* CameraToolbar.m in Sources */,
 				C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */,
 				C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */,
+				C5D5A70C1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m in Sources */,
 				C5D5A7031B5AF39F008EEDE4 /* ComposeCommentView.m in Sources */,
 				C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */,
 				C5EAE68A1B4B20F30023ECF9 /* ImagesTableViewController.m in Sources */,
