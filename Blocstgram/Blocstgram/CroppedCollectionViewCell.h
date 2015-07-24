@@ -10,7 +10,7 @@
 
 @interface CroppedCollectionViewCell : UICollectionViewCell
 
-//@property (nonatomic, strong) UILabel *label;
-//@property (nonatomic, strong) UIImageView *thumbnail;
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIImageView *thumbnail;
 
 @end
