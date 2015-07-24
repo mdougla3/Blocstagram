@@ -12,7 +12,7 @@
 
 @interface ImageLibraryViewController () <CropImageViewControllerDelegate>
 
-@property (nonatomic, strong) PHFetchResult *result;
+@property (nonatomic, strong) NSMutableArray *result;
 
 @end
 
@@ -61,7 +61,26 @@
     PHFetchOptions *options = [[PHFetchOptions alloc] init];
     options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
     
-    self.result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
+    self.result = @[].mutableCopy;
+    
+    PHFetchResult *cloudSharedResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumCloudShared options:nil];
+    
+    PHFetchResult *otherSharedResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumMyPhotoStream options:nil];
+    
+    PHFetchResult *localImagesResult= [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
+
+    
+    [cloudSharedResult enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.result addObject:obj];
+        }];
+    [otherSharedResult enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.result addObject:obj];
+    }];
+    [localImagesResult enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.result addObject:obj];
+    }];
+    
+
 }
 
 -(void) viewWillAppear:(BOOL)animated {

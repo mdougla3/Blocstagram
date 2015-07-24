@@ -26,6 +26,8 @@
 		C5D5A70F1B607313008EEDE4 /* CropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A70E1B607313008EEDE4 /* CropBox.m */; };
 		C5D5A7121B6075EA008EEDE4 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */; };
 		C5D5A7151B6076FD008EEDE4 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */; };
+		C5D5A7181B608B0B008EEDE4 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */; };
+		C5D5A71B1B609D6A008EEDE4 /* CroppedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -93,6 +95,10 @@
 		C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
 		C5D5A7131B6076FD008EEDE4 /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
 		C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
+		C5D5A7161B608B0B008EEDE4 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
+		C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		C5D5A7191B609D6A008EEDE4 /* CroppedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CroppedCollectionViewCell.h; sourceTree = "<group>"; };
+		C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CroppedCollectionViewCell.m; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 				C5EAE6951B4B2CC50023ECF9 /* DataSource.m */,
 				C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */,
 				C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */,
+				C5D5A7191B609D6A008EEDE4 /* CroppedCollectionViewCell.h */,
+				C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */,
 				C5D5A7011B5AF39F008EEDE4 /* ComposeCommentView.h */,
 				C5D5A7041B5BF874008EEDE4 /* CameraToolbar.h */,
 				C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */,
@@ -187,6 +195,8 @@
 				C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */,
 				C5D5A7101B6075EA008EEDE4 /* CropImageViewController.h */,
 				C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */,
+				C5D5A7161B608B0B008EEDE4 /* PostToInstagramViewController.h */,
+				C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */,
 				C5D5A7131B6076FD008EEDE4 /* ImageLibraryViewController.h */,
 				C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */,
 				C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */,
@@ -421,10 +431,12 @@
 				C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */,
 				C5D5A70F1B607313008EEDE4 /* CropBox.m in Sources */,
 				C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */,
+				C5D5A71B1B609D6A008EEDE4 /* CroppedCollectionViewCell.m in Sources */,
 				C57CB5241B44DCF40068ECEA /* main.m in Sources */,
 				C5D5A7091B5C030B008EEDE4 /* CameraViewController.m in Sources */,
 				C5D5A7061B5BF874008EEDE4 /* CameraToolbar.m in Sources */,
 				C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */,
+				C5D5A7181B608B0B008EEDE4 /* PostToInstagramViewController.m in Sources */,
 				C5D5A7151B6076FD008EEDE4 /* ImageLibraryViewController.m in Sources */,
 				C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */,
 				C5D5A70C1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m in Sources */,
