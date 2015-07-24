@@ -136,14 +136,14 @@
     return self.filterImages.count;
 }
 
-- (UICollectionViewCell*) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CroppedCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    
-    cell.thumbnail.image = self.filterImages[indexPath.row];
-    cell.label.text = self.filterTitles[indexPath.row];
-    
-    return cell;
-}
+//- (UICollectionViewCell*) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    CroppedCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+//    
+//    cell.thumbnail.image = self.filterImages[indexPath.row];
+//    cell.label.text = self.filterTitles[indexPath.row];
+//    
+//    return cell;
+//}
 
 
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -242,36 +242,37 @@
         }
     }];
     
-    [self.photoFilterOperationQueue addOperationWithBlock:^{
-        CIFilter *gloomFilter = [CIFilter filterWithName:@"CIGloom"];
-        CIFilter *splashFilter = [CIFilter filterWithName:@"CICircleSplashDistortion"];
-        
-        if (gloomFilter) {
-            [gloomFilter setValue:sourceCIImage forKey:kCIInputImageKey];
-            
-            NSNumber *gloomRadius = [NSNumber numberWithInt:.2];
-            [gloomFilter setValue:gloomRadius forKeyPath:@"inputRadius"];
-            
-            NSNumber *crystalRadius = [NSNumber numberWithInt:1.2];
-            [gloomFilter setValue:crystalRadius forKey:@"inputIntensity"];
-            
-            CIImage *result = gloomFilter.outputImage;
-            
-            if (splashFilter) {
-                [splashFilter setValue:result forKey:kCIInputImageKey];
-                
-                CIVector *point1 = [CIVector vectorWithX:0 Y:0];
-                [splashFilter setValue:point1 forKeyPath:@"inputCenter"];
-                
-                NSNumber *point2 = [NSNumber numberWithInt:150];
-                [splashFilter setValue:point2 forKeyPath:@"inputRadius"];
-                
-                result = splashFilter.outputImage;
-            }
-            
-            [self addCIImageToCollectionView:result withFilterTitle:NSLocalizedString(@"Crystal Meth", @"Crystal Filter")];
-        }
-    }];
+    
+//    [self.photoFilterOperationQueue addOperationWithBlock:^{
+//        CIFilter *gloomFilter = [CIFilter filterWithName:@"CIGloom"];
+//        CIFilter *splashFilter = [CIFilter filterWithName:@"CICircleSplashDistortion"];
+//        
+//        if (gloomFilter) {
+//            [gloomFilter setValue:sourceCIImage forKey:kCIInputImageKey];
+//            
+//            NSNumber *gloomRadius = [NSNumber numberWithInt:.2];
+//            [gloomFilter setValue:gloomRadius forKeyPath:@"inputRadius"];
+//            
+//            NSNumber *crystalRadius = [NSNumber numberWithInt:1.2];
+//            [gloomFilter setValue:crystalRadius forKey:@"inputIntensity"];
+//            
+//            CIImage *result = gloomFilter.outputImage;
+//            
+//            if (splashFilter) {
+//                [splashFilter setValue:result forKey:kCIInputImageKey];
+//                
+//                CIVector *point1 = [CIVector vectorWithX:0 Y:0];
+//                [splashFilter setValue:point1 forKeyPath:@"inputCenter"];
+//                
+//                NSNumber *point2 = [NSNumber numberWithInt:150];
+//                [splashFilter setValue:point2 forKeyPath:@"inputRadius"];
+//                
+//                result = splashFilter.outputImage;
+//            }
+//            
+//            [self addCIImageToCollectionView:result withFilterTitle:NSLocalizedString(@"Crystal Meth", @"Crystal Filter")];
+//        }
+//    }];
     
     // Drunk filter
     
