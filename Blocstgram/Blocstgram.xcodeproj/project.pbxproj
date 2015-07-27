@@ -28,6 +28,7 @@
 		C5D5A7151B6076FD008EEDE4 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */; };
 		C5D5A7181B608B0B008EEDE4 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */; };
 		C5D5A71B1B609D6A008EEDE4 /* CroppedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */; };
+		C5D5A71D1B65B2D5008EEDE4 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -99,6 +100,7 @@
 		C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
 		C5D5A7191B609D6A008EEDE4 /* CroppedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CroppedCollectionViewCell.h; sourceTree = "<group>"; };
 		C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CroppedCollectionViewCell.m; sourceTree = "<group>"; };
+		C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */,
 				C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */,
 				C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */,
+				C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */,
 				C5D5A7101B6075EA008EEDE4 /* CropImageViewController.h */,
 				C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */,
 				C5D5A7161B608B0B008EEDE4 /* PostToInstagramViewController.h */,
@@ -450,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D5A71D1B65B2D5008EEDE4 /* UserTests.m in Sources */,
 				C57CB53E1B44DCF40068ECEA /* BlocstgramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

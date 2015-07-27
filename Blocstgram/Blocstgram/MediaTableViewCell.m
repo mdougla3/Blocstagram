@@ -251,7 +251,7 @@ static NSParagraphStyle *paragraphStyle;
     self.usernameAndCaptionLabel.attributedText = [self usernameAndCaptionString];
     self.commentLabel.attributedText = [self commentString];
     self.likeButton.likeButtonState = mediaItem.likeState;
-    self.likeCountLabel.text = [NSString stringWithFormat:@"%ld" , mediaItem.likeCount];
+    self.likeCountLabel.text = [NSString stringWithFormat:@"%ld" , (long)mediaItem.likeCount];
     self.commentView.text = mediaItem.temporaryComment;
 }
 

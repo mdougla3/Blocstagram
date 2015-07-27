@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
 @property (nonatomic, strong) UIButton *shareButton;
 @property (nonatomic, strong) UIActivityViewController *activityViewController;
+@property (nonatomic, strong) UITapGestureRecognizer *outsideTap;
+
 
 @end
 
@@ -58,13 +60,13 @@
     [self.scrollView addGestureRecognizer:self.tap];
     [self.scrollView addGestureRecognizer:self.doubleTap];
     
-    UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [shareButton addTarget:self action:@selector(shareButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [shareButton setTitle:@"Share" forState:UIControlStateNormal];
-    self.shareButton.backgroundColor = [UIColor whiteColor];
-    shareButton.frame = CGRectMake(300, 10, 100, 100);
-    
-    [self.view addSubview:shareButton];
+//    UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [shareButton addTarget:self action:@selector(shareButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//    [shareButton setTitle:@"Share" forState:UIControlStateNormal];
+//    self.shareButton.backgroundColor = [UIColor whiteColor];
+//    shareButton.frame = CGRectMake(300, 10, 100, 100);
+//    
+//    [self.view addSubview:shareButton];
     
 }
 
@@ -157,5 +159,31 @@
     }
 }
 
+# pragma mark - Dismiss Popover
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.outsideTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleOutsideTap:)];
+    [self.outsideTap setNumberOfTapsRequired:1];
+    self.outsideTap.delegate = self;
+    [self.view.window addGestureRecognizer:self.outsideTap];
+    self.outsideTap.cancelsTouchesInView = NO;
+
+}
+
+- (void)handleOutsideTap:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        CGPoint location = [sender locationInView:nil];
+        if (![self.view pointInside:[self.view convertPoint:location fromView:self.view.window] withEvent:nil])
+        {
+            [self.view.window removeGestureRecognizer:sender];
+            self.outsideTap = nil;
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
+}
 
 @end
