@@ -12,7 +12,7 @@
 #import "SharedUtilities.h"
 
 
-@interface MediaFullScreenViewController () <UIScrollViewDelegate>
+@interface MediaFullScreenViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
@@ -171,6 +171,10 @@
     [self.view.window addGestureRecognizer:self.outsideTap];
     self.outsideTap.cancelsTouchesInView = NO;
 
+}
+
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
 }
 
 - (void)handleOutsideTap:(UITapGestureRecognizer *)sender {
