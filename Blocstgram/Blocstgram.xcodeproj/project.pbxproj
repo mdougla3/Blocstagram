@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45E4D46A06E7F0D2020995C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B21C413354462DD3EC2242F /* libPods.a */; };
 		C57CB5241B44DCF40068ECEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57CB5231B44DCF40068ECEA /* main.m */; };
 		C57CB5271B44DCF40068ECEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57CB5261B44DCF40068ECEA /* AppDelegate.m */; };
 		C57CB52F1B44DCF40068ECEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57CB52E1B44DCF40068ECEA /* Images.xcassets */; };
 		C57CB5321B44DCF40068ECEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57CB5301B44DCF40068ECEA /* LaunchScreen.xib */; };
 		C57CB53E1B44DCF40068ECEA /* BlocstgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57CB53D1B44DCF40068ECEA /* BlocstgramTests.m */; };
+		C5AD08F11B5755930012F25B /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */; };
+		C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CD87251B51A9C100470417 /* LoginViewController.m */; };
+		C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */; };
+		C5D5A6E51B59FE20008EEDE4 /* Like Button Resources in Resources */ = {isa = PBXBuildFile; fileRef = C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */; };
+		C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */; };
+		C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */; };
+		C5D5A7031B5AF39F008EEDE4 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */; };
+		C5D5A7061B5BF874008EEDE4 /* CameraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */; };
+		C5D5A7091B5C030B008EEDE4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */; };
+		C5D5A70C1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */; };
+		C5D5A70F1B607313008EEDE4 /* CropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A70E1B607313008EEDE4 /* CropBox.m */; };
+		C5D5A7121B6075EA008EEDE4 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */; };
+		C5D5A7151B6076FD008EEDE4 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */; };
+		C5D5A7181B608B0B008EEDE4 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */; };
+		C5D5A71B1B609D6A008EEDE4 /* CroppedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */; };
+		C5D5A71D1B65B2D5008EEDE4 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */; };
 		C5EAE67E1B4B20BD0023ECF9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6741B4B20BD0023ECF9 /* 1.jpg */; };
 		C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6751B4B20BD0023ECF9 /* 2.jpg */; };
 		C5EAE6801B4B20BD0023ECF9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE6761B4B20BD0023ECF9 /* 3.jpg */; };
@@ -23,6 +40,11 @@
 		C5EAE6861B4B20BD0023ECF9 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE67C1B4B20BD0023ECF9 /* 9.jpg */; };
 		C5EAE6871B4B20BD0023ECF9 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5EAE67D1B4B20BD0023ECF9 /* 10.jpg */; };
 		C5EAE68A1B4B20F30023ECF9 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE6891B4B20F30023ECF9 /* ImagesTableViewController.m */; };
+		C5EAE68D1B4B2A480023ECF9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE68C1B4B2A480023ECF9 /* User.m */; };
+		C5EAE6901B4B2B7B0023ECF9 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE68F1B4B2B7B0023ECF9 /* Media.m */; };
+		C5EAE6931B4B2C120023ECF9 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE6921B4B2C120023ECF9 /* Comment.m */; };
+		C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE6951B4B2CC50023ECF9 /* DataSource.m */; };
+		C5EAE6991B4B7BB90023ECF9 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B21C413354462DD3EC2242F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3DC041C7972C84C1581958 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7AC93DEAB07BDE7B8FA8B72C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C57CB51E1B44DCF40068ECEA /* Blocstgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB5221B44DCF40068ECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57CB5231B44DCF40068ECEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +71,36 @@
 		C57CB5371B44DCF40068ECEA /* BlocstgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB53C1B44DCF40068ECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57CB53D1B44DCF40068ECEA /* BlocstgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstgramTests.m; sourceTree = "<group>"; };
+		C5AD08EF1B5755930012F25B /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
+		C5CD87241B51A9C100470417 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C5CD87251B51A9C100470417 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C5D5A6E11B589392008EEDE4 /* SharedUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedUtilities.h; sourceTree = "<group>"; };
+		C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedUtilities.m; sourceTree = "<group>"; };
+		C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Like Button Resources"; sourceTree = "<group>"; };
+		C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		C5D5A6FE1B5A8DFB008EEDE4 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
+		C5D5A7011B5AF39F008EEDE4 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
+		C5D5A7041B5BF874008EEDE4 /* CameraToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToolbar.h; sourceTree = "<group>"; };
+		C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToolbar.m; sourceTree = "<group>"; };
+		C5D5A7071B5C030B008EEDE4 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C5D5A70A1B5C09E1008EEDE4 /* UIImage+ImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageUtilities.h"; sourceTree = "<group>"; };
+		C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageUtilities.m"; sourceTree = "<group>"; };
+		C5D5A70D1B607313008EEDE4 /* CropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropBox.h; sourceTree = "<group>"; };
+		C5D5A70E1B607313008EEDE4 /* CropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropBox.m; sourceTree = "<group>"; };
+		C5D5A7101B6075EA008EEDE4 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
+		C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		C5D5A7131B6076FD008EEDE4 /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
+		C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
+		C5D5A7161B608B0B008EEDE4 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
+		C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		C5D5A7191B609D6A008EEDE4 /* CroppedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CroppedCollectionViewCell.h; sourceTree = "<group>"; };
+		C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CroppedCollectionViewCell.m; sourceTree = "<group>"; };
+		C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		C5EAE6741B4B20BD0023ECF9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../../../Downloads/blocstagram-sample-images/1.jpg"; sourceTree = "<group>"; };
 		C5EAE6751B4B20BD0023ECF9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "../../../../../Downloads/blocstagram-sample-images/2.jpg"; sourceTree = "<group>"; };
 		C5EAE6761B4B20BD0023ECF9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../../../../Downloads/blocstagram-sample-images/3.jpg"; sourceTree = "<group>"; };
@@ -58,6 +113,16 @@
 		C5EAE67D1B4B20BD0023ECF9 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 10.jpg; path = "../../../../../Downloads/blocstagram-sample-images/10.jpg"; sourceTree = "<group>"; };
 		C5EAE6881B4B20F30023ECF9 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagesTableViewController.h; path = ../ImagesTableViewController.h; sourceTree = "<group>"; };
 		C5EAE6891B4B20F30023ECF9 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagesTableViewController.m; path = ../ImagesTableViewController.m; sourceTree = "<group>"; };
+		C5EAE68B1B4B2A480023ECF9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C5EAE68C1B4B2A480023ECF9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C5EAE68E1B4B2B7B0023ECF9 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		C5EAE68F1B4B2B7B0023ECF9 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		C5EAE6911B4B2C120023ECF9 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		C5EAE6921B4B2C120023ECF9 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		C5EAE6941B4B2CC50023ECF9 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		C5EAE6951B4B2CC50023ECF9 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		C5EAE6971B4B7BB90023ECF9 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
+		C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45E4D46A06E7F0D2020995C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +144,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219707F73E2013F403A7A2B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B21C413354462DD3EC2242F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C57CB5151B44DCF40068ECEA = {
 			isa = PBXGroup;
 			children = (
 				C57CB5201B44DCF40068ECEA /* Blocstgram */,
 				C57CB53A1B44DCF40068ECEA /* BlocstgramTests */,
 				C57CB51F1B44DCF40068ECEA /* Products */,
+				CBB6E44E8CB81A1B84742BAB /* Pods */,
+				219707F73E2013F403A7A2B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +177,47 @@
 			children = (
 				C57CB5251B44DCF40068ECEA /* AppDelegate.h */,
 				C57CB5261B44DCF40068ECEA /* AppDelegate.m */,
-				C5EAE6881B4B20F30023ECF9 /* ImagesTableViewController.h */,
 				C5EAE6891B4B20F30023ECF9 /* ImagesTableViewController.m */,
+				C5CD87251B51A9C100470417 /* LoginViewController.m */,
+				C5EAE6951B4B2CC50023ECF9 /* DataSource.m */,
+				C5D5A6E21B589392008EEDE4 /* SharedUtilities.m */,
+				C5EAE6981B4B7BB90023ECF9 /* MediaTableViewCell.m */,
+				C5D5A7191B609D6A008EEDE4 /* CroppedCollectionViewCell.h */,
+				C5D5A71A1B609D6A008EEDE4 /* CroppedCollectionViewCell.m */,
+				C5D5A7011B5AF39F008EEDE4 /* ComposeCommentView.h */,
+				C5D5A7041B5BF874008EEDE4 /* CameraToolbar.h */,
+				C5D5A7051B5BF874008EEDE4 /* CameraToolbar.m */,
+				C5D5A7071B5C030B008EEDE4 /* CameraViewController.h */,
+				C5D5A7081B5C030B008EEDE4 /* CameraViewController.m */,
+				C5D5A70D1B607313008EEDE4 /* CropBox.h */,
+				C5D5A70E1B607313008EEDE4 /* CropBox.m */,
+				C5D5A70A1B5C09E1008EEDE4 /* UIImage+ImageUtilities.h */,
+				C5D5A70B1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m */,
+				C5D5A7021B5AF39F008EEDE4 /* ComposeCommentView.m */,
+				C5AD08F01B5755930012F25B /* MediaFullScreenViewController.m */,
+				C5D5A71C1B65B2D5008EEDE4 /* UserTests.m */,
+				C5D5A7101B6075EA008EEDE4 /* CropImageViewController.h */,
+				C5D5A7111B6075EA008EEDE4 /* CropImageViewController.m */,
+				C5D5A7161B608B0B008EEDE4 /* PostToInstagramViewController.h */,
+				C5D5A7171B608B0B008EEDE4 /* PostToInstagramViewController.m */,
+				C5D5A7131B6076FD008EEDE4 /* ImageLibraryViewController.h */,
+				C5D5A7141B6076FD008EEDE4 /* ImageLibraryViewController.m */,
+				C5D5A6F81B59FEBD008EEDE4 /* CircleSpinnerView.h */,
+				C5D5A6F91B59FEBD008EEDE4 /* CircleSpinnerView.m */,
+				C5EAE6881B4B20F30023ECF9 /* ImagesTableViewController.h */,
+				C5D5A6FE1B5A8DFB008EEDE4 /* LikeButton.h */,
+				C5D5A6FF1B5A8DFB008EEDE4 /* LikeButton.m */,
+				C5CD87241B51A9C100470417 /* LoginViewController.h */,
+				C5D5A6E11B589392008EEDE4 /* SharedUtilities.h */,
+				C5EAE6971B4B7BB90023ECF9 /* MediaTableViewCell.h */,
+				C5AD08EF1B5755930012F25B /* MediaFullScreenViewController.h */,
+				C5EAE68B1B4B2A480023ECF9 /* User.h */,
+				C5EAE68E1B4B2B7B0023ECF9 /* Media.h */,
+				C5EAE6911B4B2C120023ECF9 /* Comment.h */,
+				C5EAE6941B4B2CC50023ECF9 /* DataSource.h */,
+				C5EAE6921B4B2C120023ECF9 /* Comment.m */,
+				C5EAE68F1B4B2B7B0023ECF9 /* Media.m */,
+				C5EAE68C1B4B2A480023ECF9 /* User.m */,
 				C57CB52E1B44DCF40068ECEA /* Images.xcassets */,
 				C57CB5301B44DCF40068ECEA /* LaunchScreen.xib */,
 				C57CB5211B44DCF40068ECEA /* Supporting Files */,
@@ -113,6 +228,7 @@
 		C57CB5211B44DCF40068ECEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5D5A6E41B59FE20008EEDE4 /* Like Button Resources */,
 				C5EAE6711B4B20810023ECF9 /* Images */,
 				C57CB5221B44DCF40068ECEA /* Info.plist */,
 				C57CB5231B44DCF40068ECEA /* main.m */,
@@ -154,6 +270,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		CBB6E44E8CB81A1B84742BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AC93DEAB07BDE7B8FA8B72C /* Pods.debug.xcconfig */,
+				2E3DC041C7972C84C1581958 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C57CB5411B44DCF40068ECEA /* Build configuration list for PBXNativeTarget "Blocstgram" */;
 			buildPhases = (
+				42F9CC576F24CDF15508A326 /* Check Pods Manifest.lock */,
 				C57CB51A1B44DCF40068ECEA /* Sources */,
 				C57CB51B1B44DCF40068ECEA /* Frameworks */,
 				C57CB51C1B44DCF40068ECEA /* Resources */,
+				2379312B444640C446BABCF0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +371,7 @@
 				C5EAE6821B4B20BD0023ECF9 /* 5.jpg in Resources */,
 				C5EAE6841B4B20BD0023ECF9 /* 7.jpg in Resources */,
 				C5EAE67F1B4B20BD0023ECF9 /* 2.jpg in Resources */,
+				C5D5A6E51B59FE20008EEDE4 /* Like Button Resources in Resources */,
 				C5EAE6871B4B20BD0023ECF9 /* 10.jpg in Resources */,
 				C57CB52F1B44DCF40068ECEA /* Images.xcassets in Resources */,
 			);
@@ -258,13 +386,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2379312B444640C446BABCF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F9CC576F24CDF15508A326 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C57CB51A1B44DCF40068ECEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AD08F11B5755930012F25B /* MediaFullScreenViewController.m in Sources */,
+				C5D5A7121B6075EA008EEDE4 /* CropImageViewController.m in Sources */,
+				C5EAE68D1B4B2A480023ECF9 /* User.m in Sources */,
+				C5EAE6931B4B2C120023ECF9 /* Comment.m in Sources */,
+				C5EAE6991B4B7BB90023ECF9 /* MediaTableViewCell.m in Sources */,
+				C5EAE6901B4B2B7B0023ECF9 /* Media.m in Sources */,
 				C57CB5271B44DCF40068ECEA /* AppDelegate.m in Sources */,
+				C5CD87261B51A9C100470417 /* LoginViewController.m in Sources */,
+				C5D5A70F1B607313008EEDE4 /* CropBox.m in Sources */,
+				C5EAE6961B4B2CC50023ECF9 /* DataSource.m in Sources */,
+				C5D5A71B1B609D6A008EEDE4 /* CroppedCollectionViewCell.m in Sources */,
 				C57CB5241B44DCF40068ECEA /* main.m in Sources */,
+				C5D5A7091B5C030B008EEDE4 /* CameraViewController.m in Sources */,
+				C5D5A7061B5BF874008EEDE4 /* CameraToolbar.m in Sources */,
+				C5D5A6E31B589392008EEDE4 /* SharedUtilities.m in Sources */,
+				C5D5A7181B608B0B008EEDE4 /* PostToInstagramViewController.m in Sources */,
+				C5D5A7151B6076FD008EEDE4 /* ImageLibraryViewController.m in Sources */,
+				C5D5A7001B5A8DFB008EEDE4 /* LikeButton.m in Sources */,
+				C5D5A70C1B5C09E1008EEDE4 /* UIImage+ImageUtilities.m in Sources */,
+				C5D5A7031B5AF39F008EEDE4 /* ComposeCommentView.m in Sources */,
+				C5D5A6FA1B59FEBD008EEDE4 /* CircleSpinnerView.m in Sources */,
 				C5EAE68A1B4B20F30023ECF9 /* ImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D5A71D1B65B2D5008EEDE4 /* UserTests.m in Sources */,
 				C57CB53E1B44DCF40068ECEA /* BlocstgramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +564,7 @@
 		};
 		C57CB5421B44DCF40068ECEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC93DEAB07BDE7B8FA8B72C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstgram/Info.plist;
@@ -393,6 +575,7 @@
 		};
 		C57CB5431B44DCF40068ECEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3DC041C7972C84C1581958 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstgram/Info.plist;
